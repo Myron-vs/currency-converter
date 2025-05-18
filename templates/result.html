@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Currency Converter</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css') }}">
+</head>
+<body>
+  <div class="container_result">
+    <h1 class="result_title">Result</h1>
+    <p>Amount: <span>{{ amount }}</span></p>
+    <p> From Currency: <span>{{ from_currency }}</span></p>
+    <p>To Currency: <span>{{ to_currency }}</span></p>
+    <p>Converted Result: <span>{{ converted }}</span></p>
+    <p>Conversion Rate: <span>{{ rate }}</span></p>
+    <a href="/">back to home</a>
+  </div>
+</body>
+</html>
